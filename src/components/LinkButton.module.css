@@ -1,0 +1,63 @@
+.button {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    padding: 1.25rem 1.5rem;
+    border-radius: 8px;
+    background-color: #FFFFFF;
+    border: 1.5px solid var(--color-border);
+    transition: all 0.2s ease;
+    text-decoration: none;
+    color: var(--color-text);
+    position: relative;
+}
+
+.button:hover {
+    border-color: var(--color-accent);
+    transform: translateY(-1px);
+    box-shadow: var(--shadow-subtle);
+}
+
+.button:active {
+    transform: translateY(0);
+}
+
+.icon {
+    width: 22px;
+    height: 22px;
+    flex-shrink: 0;
+    color: var(--color-text);
+    transition: color 0.2s ease;
+}
+
+.button:hover .icon {
+    color: var(--color-accent);
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    flex: 1;
+}
+
+.label {
+    font-weight: 500;
+    font-size: 1rem;
+    letter-spacing: -0.01em;
+    color: var(--color-text);
+}
+
+.subLabel {
+    font-size: 0.85rem;
+    color: var(--color-text-light);
+    font-weight: 400;
+}
+
+/* Variant styles - minimal differences in minimalist design */
+.primary,
+.secondary,
+.accent {
+    /* All variants look the same in minimalist design */
+}
