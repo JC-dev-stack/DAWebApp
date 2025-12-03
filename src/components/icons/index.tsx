@@ -114,3 +114,32 @@ export function ScaleIcon({ className }: { className?: string }) {
         </svg>
     )
 }
+
+export function OvenIcon({ className }: { className?: string }) {
+    return (
+        <svg
+            className={className}
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="1.5"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            xmlns="http://www.w3.org/2000/svg"
+        >
+            {/* Oven body */}
+            <rect x="3" y="4" width="18" height="16" rx="2" />
+
+            {/* Control panel divider */}
+            <line x1="3" y1="10" x2="21" y2="10" />
+
+            {/* Knobs */}
+            <circle cx="7" cy="7" r="1" fill="currentColor" stroke="none" />
+            <circle cx="12" cy="7" r="1" fill="currentColor" stroke="none" />
+            <circle cx="17" cy="7" r="1" fill="currentColor" stroke="none" />
+
+            {/* Window */}
+            <rect x="7" y="13" width="10" height="4" rx="1" />
+        </svg>
+    )
+}

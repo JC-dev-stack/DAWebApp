@@ -41,6 +41,14 @@ function App() {
                     />
 
                     <LinkButton
+                        id="horneado"
+                        href="/Carta Servicios Horneado D&A.pdf"
+                        label="Servicios de Horneado"
+                        variant="primary"
+                        icon="oven"
+                    />
+
+                    <LinkButton
                         id="whatsapp"
                         href="https://wa.link/gv9pc2"
                         label="Contáctanos por Whatsapp!"

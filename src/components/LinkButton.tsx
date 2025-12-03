@@ -1,11 +1,11 @@
 import styles from './LinkButton.module.css'
-import { WhatsAppIcon, MenuIcon, LocationIcon, ChristmasTreeIcon, ScaleIcon } from './icons'
+import { WhatsAppIcon, MenuIcon, LocationIcon, ChristmasTreeIcon, ScaleIcon, OvenIcon } from './icons'
 
 interface LinkButtonProps {
     href: string
     label: string
     subLabel?: string
-    icon?: 'whatsapp' | 'menu' | 'location' | 'tree' | 'scale'
+    icon?: 'whatsapp' | 'menu' | 'location' | 'tree' | 'scale' | 'oven'
     variant?: 'primary' | 'secondary' | 'accent'
     id: string
 }
@@ -32,6 +32,8 @@ export default function LinkButton({ href, label, subLabel, icon, variant = 'pri
                 return <ChristmasTreeIcon className={iconClass} />
             case 'scale':
                 return <ScaleIcon className={iconClass} />
+            case 'oven':
+                return <OvenIcon className={iconClass} />
             default:
                 return null
         }
