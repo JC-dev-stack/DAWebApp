@@ -1,9 +1,28 @@
+import { useState } from 'react'
 import LinkButton from './components/LinkButton'
 import styles from './App.module.css'
 
 function App() {
+    const [showModal, setShowModal] = useState(true);
+
     return (
         <main className={styles.main}>
+            {/* NOTE: Mother's Day promotional ad campaign. To be removed after Mother's Day. */}
+            {showModal && (
+                <div className={styles.modalOverlay} onClick={() => setShowModal(false)}>
+                    <div className={styles.modalContent} onClick={(e) => e.stopPropagation()}>
+                        <button className={styles.closeButton} onClick={() => setShowModal(false)}>
+                            &times;
+                        </button>
+                        <img 
+                            src="/pack_mama.jpeg" 
+                            alt="Promoción Especial" 
+                            className={styles.modalImage} 
+                        />
+                    </div>
+                </div>
+            )}
+
             <div className="container">
                 {/* Header */}
                 <header className={styles.header}>
