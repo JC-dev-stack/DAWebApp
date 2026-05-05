@@ -18,27 +18,15 @@ function App() {
                 <div className={styles.grid}>
                     <LinkButton
                         id="menu"
-                        href="/Carta Menu D&A 2025.pdf"
+                        href="/D&A_CartaMenu.pdf"
                         label="Ver Carta"
                         variant="primary"
                         icon="menu"
                     />
 
-                    <LinkButton
-                        id="christmas"
-                        href="/Especiales de Navidad D&A 2025.pdf"
-                        label="Especiales de Navidad"
-                        variant="primary"
-                        icon="tree"
-                    />
 
-                    <LinkButton
-                        id="carnes"
-                        href="/Carnes al peso.pdf"
-                        label="Carnes al peso"
-                        variant="primary"
-                        icon="scale"
-                    />
+
+
 
                     <LinkButton
                         id="horneado"
